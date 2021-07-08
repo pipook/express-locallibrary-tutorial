@@ -8,11 +8,11 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var catalogRouter = require('./routes/catalog');  //Import routes for "catalog" area of site
 var compression = require('compression');
-var helmet = require('helmet');
+//var helmet = require('helmet');
 
 var app = express();
 
-app.use(helmet());
+//app.use(helmet());
 //Set up mongoose connection
 var mongoose = require('mongoose');
 var dev_db_url = 'mongodb://localhost/local_library';
